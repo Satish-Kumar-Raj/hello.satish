@@ -1,12 +1,14 @@
-import React from 'react'
-
-function page() {
+function MyButton({ title }: { title: string }) {
   return (
-    <div>
-      <h1>Hello JS</h1>
-
-    </div>
-  )
+    <button>{title}</button>
+  );
 }
 
-export default page
+export default function MyApp() {
+  return (
+    <div>
+      <h1>Welcome to my app</h1>
+      <MyButton title="I'm a button" />
+    </div>
+  );
+}
